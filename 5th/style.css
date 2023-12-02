@@ -1,0 +1,96 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fce3de; /* Sweet background color */
+    text-align: center;
+    padding: 20px;
+    position: relative; /* Ensure position:relative for absolute positioning */
+}
+
+/* Function to create heart shapes */
+.heart {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ff6f61; /* Sweet heart color */
+    transform: rotate(-45deg);
+}
+
+/* Small hearts */
+.heart::before,
+.heart::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #ff6f61; /* Sweet heart color */
+    border-radius: 50%;
+}
+
+.heart::before {
+    top: -5px;
+    left: 0;
+}
+
+.heart::after {
+    top: 0;
+    left: -5px;
+}
+
+/* Big hearts */
+.big-heart {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #ff6f61; /* Sweet heart color */
+    border-radius: 50%;
+    transform: rotate(-45deg);
+}
+
+.big-heart::before,
+.big-heart::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #ff6f61; /* Sweet heart color */
+    border-radius: 50%;
+}
+
+.big-heart::before {
+    top: -15px;
+    left: 0;
+}
+
+.big-heart::after {
+    top: 0;
+    left: -15px;
+}
+
+h1 {
+    color: #ff6f61; /* Sweet text color */
+}
+
+p {
+    color: #333;
+}
+
+img {
+    max-width: 20%;
+    height: auto;
+    margin-top: 20px;
+}
+
+#video-container {
+    margin-top: 30px;
+}
+
+video {
+    width: 200%;
+    max-width: 250px; /* Adjust the maximum width of the video */
+    margin-top: 20px;
+}
+
+.month-section {
+    margin-top: 30px;
+}
